@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling and Capturing</title>
+    <style>
+        body{
+            padding: 100px;
+            background-color:burlywood;
+            /* border: 1px solid red; */
+        }
+        #myDiv{
+            padding: 50px;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+      <div id="myDiv">
+        <button id="btn">Click me</button>
+      </div>
+
+
+      <!-- if our value is false then execute bubbling way...........
+        (bubbling means chiled pahele execute hoga uske bad use pairent fir uske pairent) -->
+      <!-- <script>
+              let d = document.getElementById("myDiv");
+              let b = document.getElementById("btn");
+
+              b.addEventListener('click', btnClicked);
+              d.addEventListener('click', divClicked);
+              document.body.addEventListener('click', bodyClicked);
+
+              function btnClicked(){
+                console.log("button clicked...");
+              }
+              function divClicked(){
+                console.log("div clicked...");
+              }
+              function bodyClicked(){
+                console.log("body clicked...");
+              }
+      </script> -->
+      <!-- <script>
+        let d = document.getElementById("myDiv");
+        let b = document.getElementById("btn");
+
+        b.addEventListener('click', btnClicked, true);
+        d.addEventListener('click', divClicked,true);
+        document.body.addEventListener('click', bodyClicked, true);
+
+        function btnClicked(){
+          console.log("button clicked...");
+        }
+        function divClicked(){
+          console.log("div clicked...");
+        }
+        function bodyClicked(){
+          console.log("body clicked...");
+        }
+     </script> -->
+     <script>
+        let d = document.getElementById("myDiv");
+        let b = document.getElementById("btn");
+
+        b.addEventListener('click', btnClicked);
+        d.addEventListener('click', divClicked);
+        document.body.addEventListener('click', bodyClicked);
+
+        function btnClicked(event){
+          console.log("button clicked...");
+          event.stopPropagation();
+        }
+        function divClicked(){
+          console.log("div clicked...");
+        }
+        function bodyClicked(){
+          console.log("body clicked...");
+        }
+     </script>
+</body>
+</html>

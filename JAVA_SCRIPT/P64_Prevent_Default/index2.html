@@ -1,0 +1,23 @@
+<!-- preventDefault means stop working (kisi DOM ka netural behaviur change karna hota hai wahan ham preventDefault ka use karte hai) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index 2</title>
+</head>
+<body>
+    <form action="" id="myForm">
+        <input type="text">
+        <input type="submit">
+    </form>
+    
+    <script>
+        let form = document.getElementById("myForm");
+
+        form.addEventListener('submit', function(ee){
+            ee.preventDefault();
+        });
+    </script>
+</body>
+</html>

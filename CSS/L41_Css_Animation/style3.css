@@ -1,0 +1,27 @@
+#square {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: slideSquare 2s infinite;
+    animation-play-state: running;
+  }
+  
+  @keyframes slideSquare {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 1000px; background-color:yellow;
+    }
+    60%{
+      left: 1200px; background-color: aqua;
+    }
+     100% {
+      left: 0;
+    }
+  }
+  
+  
+  
+  

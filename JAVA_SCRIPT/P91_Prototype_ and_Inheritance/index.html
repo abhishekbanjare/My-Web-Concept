@@ -1,0 +1,102 @@
+<!-- Prototype chainning -->
+<!-- yahan ham dekhenge ki prototype ke madad se inheritance kaise karte hai -->
+<!-- jab ham object create karte hai to javaScript har object ke sath ek proptotype create kar deta hai -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype and Inheri</title>
+</head>
+<body>
+    <h2>This is a javaScript Tutorial</h2>
+    <script>
+    //     // create object direct way
+    //     let person1 = {};
+    //     console.log(person1);
+
+    //     let person2 = {
+    //         name: "Abhishek"
+    //     };
+    //     console.log(person2);
+
+    //     console.log(person2.hasOwnProperty('name')); // true or false
+
+    //     //create object by constructor function / constructor funtion banane pe inka bhi ek alag prototype ban jata hai ................
+
+    //    function Person(n){
+    //     this.name = n;
+    //    }
+    //    let person3 = new Person("Prashant");
+    //    console.log(person3);
+
+
+
+    //   Use Prototype .............................................................................................
+     
+    // function Person(first, last, age){
+    //     this.firstName = first;
+    //     this.lastName = last;
+
+    //     // this.fullName = function(){
+    //     //     console.log(this.firstName + " " + this.lastName);
+    //     // }
+    // }
+    // //constructor function ke under koi bhi properties ya method add karne ke liye prototype ka use karte hai
+    // Person.prototype.fullName = function(){    
+    //     console.log(this.firstName +" "+ this.lastName);
+    // }
+    // Person.prototype.roll = 200212;  //add property
+
+    // let person1 = new Person("vishwajeet", "kumar", 28);
+    // let person2 = new Person("Abhishek", "Banjare", 25);
+
+    // // console.log(person1);
+    // // console.log(person2);
+
+    // console.log(person1.fullName());
+    // console.log(person2.fullName());
+
+    // console.log(person2);
+
+
+
+
+    //inheritance...........................................................................................................
+
+    function Creature(ls){
+        this.lifeSpan = ls;
+    }
+
+    Creature.prototype.breath = function(){
+        console.log("breathing....!!");
+    }
+    let creature1 = new Creature(100);
+    console.log(creature1);
+
+
+    function Person(first, last, a){
+        this.firstName = first;
+        this.lastName = last;
+        this.age = a;
+    }
+
+    Person.prototype.fullName = function(){    
+        console.log(this.firstName +" "+ this.lastName);
+    }
+
+    // Person.prototype = Object.create(Creature.prototype);   //Person.prototype replaced by Creature.prototype
+   Person.prototype.__proto__ = Object.create(Creature.prototype);     //Person.prototype conect with Creature.prototype
+     let person1 = new Person("vishwajeet", "kumar", 28);
+    let person2 = new Person("Abhishek", "Banjare", 25);
+
+    console.log(person1);
+    console.log(person2.breath());
+    console.log(person2.fullName());
+    console.log(person2);
+
+
+
+    </script>
+</body>
+</html>

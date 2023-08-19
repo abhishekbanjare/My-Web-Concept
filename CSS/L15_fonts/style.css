@@ -1,0 +1,32 @@
+/* ......................................................... */
+/* h1{ */
+    /* color: red; */
+    /* font-weight:200; */
+    /* font-family: 'Raleway', sans-serif; */
+/* } */
+
+/* p{ */
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-size:30px; */
+    /* font-weight:bold; */
+    /* font-weight:regular; */
+
+    /* font-style:italic; */
+
+    /* font-variant:small-caps; */
+/* } */
+/* ......................................................... */
+@font-face{
+    font-family: abc;
+    src: url('fonts/Sacramento-Regular.ttf');
+}
+
+h1{
+    font-family: abc;
+
+}
+p{
+    /* if font-family: abc is not get then run Poppins */
+    font-family: abc, 'Poppins', sans-serif;;
+}
+

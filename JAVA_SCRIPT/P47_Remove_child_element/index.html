@@ -1,0 +1,44 @@
+<!-- kisi element ko remove karne ke liye uska parent hona jarury hai -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Child Element</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>Product</li>
+        <li>About us</li>
+    </ul>
+
+    <!-- <script>
+        let parent = document.getElementById("menu");
+
+        // let rmvelm1 = parent.firstElementChild;
+        // parent.removeChild(rmvelm1);    
+
+        // let rmvelm2 = parent.firstElementChild.nextElementSibling;
+        // parent.removeChild(rmvelm2);
+
+        let rmvelm3 = parent.firstElementChild.nextElementSibling.nextElementSibling;
+        parent.removeChild(rmvelm3);
+    </script> -->
+
+<!-- ................................................................................................................ -->
+    
+<!-- if we want to remove all ul tag then -->
+    <script>
+        // let parent = document.body;
+        // let remul = document.getElementById("menu");
+        // parent.removeChild(remul);
+        
+        //...................................................................
+
+        let remul = document.getElementById("menu");  
+        document.body.removeChild(remul);
+    </script>
+</body>
+</html>

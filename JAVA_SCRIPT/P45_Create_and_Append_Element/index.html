@@ -1,0 +1,29 @@
+<!-- Append -> jodna ,  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creat and Append Element</title>
+</head>
+<body>
+    <div id="intro">
+        <p>Hello this is a p tag</p>
+    </div>
+
+    <!-- create and add new element in any html tag -->
+    <script>
+        let elm = document.getElementById("intro");
+
+        let h1 = document.createElement("h1");
+        h1.className = "try pi";   //set class
+        h1.id = "abc";    //set id
+
+        let text = document.createTextNode("This is h1 tag");  //method
+        h1.appendChild(text);
+
+        elm.appendChild(h1);
+    </script>
+</body>
+</html>

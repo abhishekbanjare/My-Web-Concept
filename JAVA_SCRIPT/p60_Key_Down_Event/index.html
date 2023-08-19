@@ -1,0 +1,29 @@
+<!-- Key board events -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+         }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+
+    <script>
+        // window.addEventListener('keydown',checkkey);
+        window.addEventListener('keyup',checkkey);
+
+        function checkkey(event){
+            console.log(event.key);
+        }
+    </script>
+    
+</body>
+</html>

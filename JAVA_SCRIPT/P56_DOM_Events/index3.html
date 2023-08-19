@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index 3</title>
+</head>
+<body>
+    click
+    focus
+    <div>
+        blur
+      drop
+      mouseout
+      keyup
+      keydown
+      loadstart
+      load
+      play
+      pause
+      toggle
+      scroll
+    </div>
+
+
+
+    <button id="disp" onclick="displayFn()">DISPLAY</button>
+    <h2 id="hh"></h2>
+
+    <h1 id="hh1">Hello Change My Color To Red Hello Change My Color To Red</h1>
+    <button id="color" onclick="colorFn()">Red The Text</button><br><br>
+
+    Name: <input type="text" id="inputname">
+    <button id="subBtn" onclick="submitFn()">SUBMIT</button>
+    <h3 id="show">Your Output Show Here</h3>
+
+    <script>
+        function displayFn(){
+            console.log("Display somthing in console........");
+            document.getElementById("hh").innerHTML ="Hello Abhishek Display something here....";
+            document.getElementById("hh").style.color = 'blue';
+        }
+        function colorFn(){
+            // let hh1 = document.getElementById("hh1");
+            // hh1.style.color = 'red';
+            //            or
+            document.getElementById("hh1").style.color = 'red';
+        }
+        function submitFn(){
+               let inputVal = document.getElementById("inputname").value;
+               document.getElementById("show").innerHTML = inputVal;
+        }
+
+    </script>
+</body>
+</html>

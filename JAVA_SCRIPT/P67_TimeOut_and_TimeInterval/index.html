@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <script>
+        // ham ek time dete hai usi time ke bad hamara function execute hota hai
+       let timeoutId = setTimeout(myFunction, 5000);
+        function myFunction(){
+            alert("please subscribe...");
+        }
+
+        clearTimeout(timeoutId);   //if we want to not execute 
+    </script> -->
+
+    <!-- .................................................................................... -->
+<!-- setInterval -> execute in looping -->
+
+    <button id="btn">Clear Interval</button>
+    <script>
+           var t1 = setInterval(myFunction, 2000);
+           function myFunction(){
+               console.log("please subscrib my channel..."); 
+           }
+
+           let btn1 = document.getElementById("btn");
+           btn1.addEventListener('click',function(){
+            clearInterval(t1);
+           });
+    </script>
+ 
+    
+</body>
+</html>

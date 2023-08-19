@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Destructuring</title>
+</head>
+<body>
+    <h2>Hello this tutorial is Advanced JavaScript</h2>
+      <script>
+        // //create object in normal way....................................
+        // let book = {
+        //     name: "Advance js",
+        //     page: 200,
+        //     price: 500
+        // };
+        // let name = book.name;
+        // let page = book.page;
+        // let price = book.price;
+        // console.log(name);
+        // console.log(page);
+        // console.log(price);
+
+        //create object in Advance way (ES6)....................................................
+        // let book = {
+        //     name: "Advance js",
+        //     page: 200,
+        //     price: 500,
+        //     publice: "w3school"
+        // };
+        // //Destructuring......................................................................
+        // let{name, page, price, publice} = book;
+        // console.log(name);
+        // console.log(page);
+        // console.log(price);
+        // console.log(publice);
+
+        // // change variable name.................................................................
+        // let{name:title, page, price, publice} = book;
+        // console.log(title);
+        // console.log(page);
+        // console.log(price);
+        // console.log(publice);
+
+        // // set default value......................................................................
+        //  let book = {
+        //     name: "Advance js",
+        //     page: 200,
+        //     publice: "w3school"
+        // };
+        // let{name, page, price=700, publice} = book; // price = 700 is default value 
+        // console.log(name);
+        // console.log(page);
+        // console.log(price);
+        // console.log(publice);
+
+        //nested objects..............................................................................
+        let book = {
+            name: "Advance JS",
+            page: 200,
+
+            publication: {
+                 pub_name: "w3shool",
+                 year: 2023
+            }
+        };
+        let{name, page, publication:{pub_name:pub, year}} = book;
+        console.log(name);
+        console.log(page);
+        console.log(pub);
+        console.log(year);
+
+
+
+
+      </script>
+</body>
+</html>

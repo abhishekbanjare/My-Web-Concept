@@ -1,0 +1,46 @@
+#div1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 100px;
+
+    /* transition-property: width;
+    transition-duration: 1s; */
+
+    /* transition-property: height;
+    transition-duration: 1s; */
+
+    /* transition-property: height width;
+    transition-duration: 3s; */
+
+    /* transition-property: background-color;
+    transition-duration: 2s; */
+
+    transition-property: width height background-color;
+    transition-duration: 1s;
+
+    /* start in 2 second */
+    /* transition-delay: 2s;    */
+
+    /* transition-timing-function:ease; */
+    /* transition-timing-function:ease-in; */
+    /* transition-timing-function:ease-in-out; */
+    /* transition-timing-function:ease-out; */
+    /* transition-timing-function:step-end; */
+     
+    /* sort cut syntex
+    transition: property, duration, timing-function, delay; */
+    transition: width 2s, height 3s;
+
+}
+
+#div1:hover{
+    /* width: 200px; */
+    /* height:200px; */
+
+    /* background-color: aqua; */
+
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}

@@ -1,0 +1,32 @@
+<!-- add new features in ES6   Rest parameter -->
+<!-- by users not defined number of parameters/arguments this features  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest parameters</title>
+</head>
+<body>
+    <script>
+        // // this is a rest parameters
+        // function sum(...args){
+        //     console.log(args);
+        // }
+        // sum(2, 5, 3, 7, 3);
+
+        //....................................................................................
+
+        function add(...arg){
+            let result = 0;
+            for(let i = 0 ; i < arg.length ; i++){
+                result += arg[i];
+            }
+            console.log(result);
+        }
+
+        add(10,20,30,40,50);
+        add(100,200,300);
+    </script>
+</body>
+</html>

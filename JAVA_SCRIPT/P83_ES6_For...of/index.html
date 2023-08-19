@@ -1,0 +1,87 @@
+<!-- for...of this is a second version of for loop in ES6 -->
+<!-- for .... of loop iterate array/string/object and gives us value -->
+<!-- gives values.. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for...of</title>
+</head>
+<body>
+    <script>
+        // ...................... use in array........................................
+        // let score = [100, 600, 300, 800, 700];
+        // let add = 0;
+        // for(let x of score){
+        //     add += x;
+        //     console.log(x);
+        // }
+        // console.log(add);
+
+        //............................use in string ...................................
+
+        // let string = "Hello World";
+
+        // for(let i of string){
+        //     console.log(i);
+        // }
+
+        //..............................................................................
+        // Example array of objects
+        // const people = [
+        // { name: 'Alice', age: 30 },
+        // { name: 'Bob', age: 25 },
+        // { name: 'Charlie', age: 40 },
+        // { name: 'David', age: 35 }
+        // ];
+
+        // // Using for...of loop to iterate over the array of objects
+        // for (const person of people) {
+        // console.log(`${person.name} is ${person.age} years old.`);
+        // }
+
+       //........................................................................................................
+       
+        //  let cars = ["BMW", "VOLVO", "MINI","FORTUNER"];
+        //     for(let name of cars){
+        //         console.log(name);
+        //     }
+
+
+
+        //................................................................................................
+        //..............................for in loop.......................................................
+        // for in loop iterate string/array/objects and gives us property/index number
+        //gives properties index number
+
+
+        function solve(obj) {
+            // Iterate using for of loop
+            // Object.values(obj) returns an array containing the values of the properties of the obj object.
+            for (const value of Object.values(obj)) {
+                console.log(value);
+            }
+           
+
+            // Iterate using for in loop
+            // Object.entries(obj) returns an array of arrays, where each inner array contains the key-value pairs of the obj object.
+            // for (const [key, value] in Object.entries(obj)) {
+            //     console.log(`${key}: ${value}`);
+            // }
+           //OR.............................
+            for (const key in obj) {
+                  console.log(`${key}: ${obj[key]}`);
+            }
+        }
+
+        const obj = {name:'abhishek', age: 25, location:'Raipur', roll: 2002};
+        solve(obj);
+
+
+       
+    </script>
+</body>
+</html>

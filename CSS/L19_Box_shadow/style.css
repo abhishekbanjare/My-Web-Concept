@@ -1,0 +1,17 @@
+div{
+    border: 1px solid blue;
+    width:500px;
+    background-color:aquamarine;
+    margin:100px;
+    padding:20px;
+
+    /* box shadow property */
+    /* outer shadow */
+    /* box-shadow: 10px 10px 10px 3px brown; */
+
+    /* inner shadow */
+    /* box-shadow: 10px 10px 10px 3px gray inset; */
+
+    /* multiple shadow */
+    box-shadow: 10px 5px 5px 3px green, -10px 14px 10px 3px red;
+}

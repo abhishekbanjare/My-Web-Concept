@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level pro</title>
+</head>
+<body>
+    <!-- List in HTML -->
+    <!-- Unorderd list <ul></ul>, Orderd list <ol></ol> -->
+    <!-- Unorderd List Example -->
+    <ul>
+        <li>ABHISHEK</li>
+           <ul>
+              <li>Education: MCA</li>
+                  <ul>
+                      <li>Goal: Want to become a Software Engineer</li>
+                      <li>Company: Google</li>
+                      <li>Future plan: Open our owne company and it make big company</li>
+                  </ul>
+              <li>From: GGU</li>
+              <li>Experience: No</li>
+           </ul>
+        <li>DEVENDRA</li>
+           <ul>
+              <li>Education: BCA</li>
+              <li>From: CCP</li>
+              <li>Experience: No</li>
+           </ul>
+        <li>AMAN</li>
+           <ul>
+              <li>Education: BCOMLLB</li>
+              <li>From: GGU</li>
+              <li>Experience: No</li>
+           </ul>
+           
+        
+        <li>NITESH</li>
+           <ul>
+               <li>Education: MCA</li>
+               <li>From: NIT Raipure</li>
+               <li>Experience: No</li>
+           </ul>
+    </ul>
+    <br>
+    <hr>
+  <!-- Orderd List Example -->
+    <ol type="A">
+        <li>ABHISHEK</li>
+            <ol type="a">
+                <li>Education: MCA</li>
+                <li>From: GGU</li>
+                <li>Experience: No</li>
+            </ol>
+           
+
+        <li>DEVENDRA</li>
+           <ol type="I">
+              <li>Education:BCA</li>
+              <li>From: CCP</li>
+              <li>Experience: No</li>
+           </ol>
+        <li>AMAN</li>
+        <li>NITESH</li>
+    </ol>
+    <!-- Table tage -->
+    <table>
+        <thead>
+        <caption>STUDENT DETAILS</caption>
+        <tr>
+            <!-- <th colspan="3">STUDENT INFORMATION</th> -->
+            <th>Name</th>
+            <th>Roll</th>
+            <th>Mobile</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>Abhishek</td>
+            <td>2002</td>
+            <td>909803</td>
+        </tr>
+        <tr>
+            <td>Nitesh</td>
+            <td>2004</td>
+            <!-- <td></td> -->
+            <td>782446</td>
+        </tr>
+        <tr>
+            <td>Devendra</td>
+            <td>2006</td>
+            <td>783457</td>
+        </tr>
+        </tbody>
+
+    </table>
+    <hr>
+
+    <!-- HTML FORM -->
+    <!-- Forms are used to collect data from the user
+    Eg- sign-up|login|help request|contact me -->
+    <form action="/action.php">
+        <input type="text" placeholder="Enter First Name">
+        <input type="text" placeholder="Enter Last Name"><br>
+        <input type="password" placeholder="Enter your password">
+        <input type="text" placeholder="Enter your city"><br>
+        <input type="text" placeholder="Enter your addresh">
+        <input type="number" placeholder="Enter your mobile">
+        <br>
+        <br>
+
+        <!-- Radio button  -->
+        <caption>SELECT YOUR CLASS</caption><BR>
+        <label for="id1">
+        <input type="radio" value="class X" name="class" id="id1">class X
+        </label>
+        <label for="id2"></lable>
+        <input type="radio" value="class XII" name="class" id="id2">Class XII
+        </lable>
+        <br><br>
+
+        <!-- Checkbox -->
+        <!-- we use it to select multiple option -->
+        <caption>SELECT YOUR SUBJECT</caption><br>
+        <label for="math">
+            <input type="checkbox" value="math" name="subject" id="101">Maths
+        </label><br>
+
+        <label for="phy">
+            <input type="checkbox" value="phy" name="subject"  id="102">Physics
+        </label><br>
+
+        <label for="chemistry">
+            <input type="checkbox" value="chemistry" name="subject" id="103">Chemistry
+        </label><br>
+
+        <label for="CS">
+            <input type="checkbox" value="CS" name="subject" id="104">Computer Science
+        </label><br>
+        <br><br>
+
+        <!-- Text Area -->
+        <textarea name="feedback" id="101" placeholder="Please Give Your Valueable Feedback Heare" rows="5">Feedback</textarea>
+        <br><br>
+        <!-- Drop down list -->
+        SELECT YOUR CITY
+        <select name="city" id="city">
+          <option vlue="Delhi">Delhi</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Banglore">Bangalore</option>
+          <option value="Hydrabad">Hydrabad</option>
+          <option value="Bilaspur">Bilaspur</option>
+          <option value="Raipure">Raipure</option>     
+       </select>
+       <br><br>
+       <input type="submit" value="submit">
+    </form><br><br>
+    <hr>
+    <!-- ifram Tag -->
+    <!-- website inside website -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ySk9BcKNQCg"></iframe><br>
+    <iframe width="560" height="315" src="https://www.wikipedia.org/"></iframe><br> <br>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ySk9BcKNQCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    <hr>
+    <!-- Video Tage -->
+    <!-- Atributes->height, width, controls, loop, autoplay -->
+    <video width="560" height="315" src="/Myvideo.mp4" controls >My Video</video>
+
+</body>
+</html>

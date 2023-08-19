@@ -1,0 +1,27 @@
+<!-- DOMContentLoaded :=> the browser fully loaded HTML and completed building the DOM tree. However, it hasn't loaded external resources like stylesheets and images. In this event, you can start selecting DOM nodes or initialize the interface.(document load hone ke turant bad)
+
+load :=> the browser fully loaded the HTML and also external resources like (style and another activity hone ke bad)
+images and stylesheets.
+When you leave the page, the following events fire in sequence -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page load events</title>
+</head>
+<body>
+    <img width="500" src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Pizigani_1367_Chart_10MB.jpg">
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function(){
+            console.log("DOM tree created");
+        });
+
+        window.addEventListener('load', function(){
+            console.log("Fully loaded");
+        });
+    </script>
+</body>
+</html>

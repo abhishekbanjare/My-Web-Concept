@@ -1,0 +1,64 @@
+/* element selector */
+li{
+    color:red;
+}
+
+/* id selector.............................................*/
+#list2{
+    color:blue;
+} 
+
+/* class selector........................................ */
+.list5{
+    color:greenyellow;
+}
+
+/* Pseudo class.......................................... */
+/* a:hover{
+    color: red;
+} */
+
+/* Pseudo element......................................... */
+p::first-line{
+    color:blue;
+}
+
+/* atribute selector....................................... */
+/* a[href="https://www.google.com"]{
+    color:yellow;
+} */
+
+/* .......................................................... */
+/* input[type="password"]{
+    color:orangered;
+} */
+
+/* universal selector.......................................... */
+/* *{
+    border:1px solid red;
+} */
+
+/* General child................................................ */
+/* div a{
+    color:palevioletred;
+} */
+
+/* direct child................................................. */
+/* div>a{
+    color:green;
+} */
+
+/* Just sibling................................................. */
+/* div + a{
+    color:darkred;
+} */
+
+/* Normal sibling............................................... */
+/* div ~ a{
+    color:palevioletred;
+} */
+
+/* and selector / we select many elements ....................*/
+h1, p{
+    background-color:aqua;
+}

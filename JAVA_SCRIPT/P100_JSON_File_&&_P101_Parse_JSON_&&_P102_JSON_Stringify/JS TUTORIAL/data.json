@@ -1,0 +1,13 @@
+
+{
+    "name": "Vishwajeet",
+    "age": 25,
+    "is_student": true,
+    "passport_to": null,
+    "p_language": ["c","c++","java","python"],
+    "address":{
+        "city": "delhi",
+        "state": "new delhi",
+        "pincode": 110011
+    }
+}

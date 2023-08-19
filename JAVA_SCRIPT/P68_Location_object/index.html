@@ -1,0 +1,49 @@
+<!-- location object -> (1) windo ka sub object hota hai aur iska use current page ka url/information nikalne ke liye 
+                        kiya jata hai aur
+                       (2) ek jhagah se dusre jagah me redirect karne ke liye bhi iska use kiya jata hai
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        //properties of location
+        console.log(window.location.href);
+        console.log(location.pathname);
+        console.log(location.protocol);
+    </script> -->
+
+    <!-- ......................................................................................... -->
+    <!-- method of location its make history -->
+    <!-- <button id="btn" onclick="fun()">Redirect to Google</button>
+    <script>
+        function fun(){
+            // window.location = "https://www.google.com";
+            // location.href = "https://www.google.com";
+               location.assign("https://www.google.com");
+        }
+    </script> -->
+
+    <!-- ......................................................................................... -->
+    <!-- replace method   its not make history -->
+
+    <!-- <button id="btn" onclick="fun()">Redirect to Google</button>
+    <script>
+        function fun(){
+            location.replace("https://www.google.com");
+        }
+    </script> -->
+
+     <!-- ......................................................................................... -->
+     <button id="btn" onclick="fun()">Reload/Refresh</button>
+    <script>
+        function fun(){
+            location.reload();
+        }
+    </script>
+</body>
+</html>

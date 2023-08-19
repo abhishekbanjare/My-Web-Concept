@@ -1,0 +1,11 @@
+img{
+    border:1px solid red;
+    width: 500px;
+    height:400px;
+    object-fit:contain;
+    /* object-fit:fill; */
+    /* object-fit:cover; */
+
+    /* object-position:top center; */
+    object-position:top left;
+}

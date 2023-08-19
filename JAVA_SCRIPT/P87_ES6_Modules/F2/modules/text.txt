@@ -1,0 +1,5 @@
+1.   what is modul: modul is in many more javaScripts file
+
+2.   export keyword ka use kisi bhi code ko export/ permision dene ke liye karte hai , yadi ham chahte hai ki hamare code ko koi dusra file use kare to us code ke samne export keyword likhna hoga tabhi oo hamare code ko use kar payega
+
+3.   yadi ham apne file me kisi dusre file ke code ko use karna chahte hai to hame apne file me dusre file ke code ko import karna hoga tabhi ham us code ko use kar payenge

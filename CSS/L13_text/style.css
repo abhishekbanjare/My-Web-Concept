@@ -1,0 +1,55 @@
+#text{
+    width:500px;
+    height:300px;
+    border:1px solid black;
+    /* color:blue; */
+
+
+    /* text-align:left; */
+    /* text-align:right; */
+    /* text-align:center; */
+    /* text-align:justify; */
+    /* direction: rtl; */
+
+
+    /* text-decoration: underline; */
+    /* text-decoration:overline; */
+    /* text-decoration:none; */
+    /* text-decoration: line-through; */
+    /* text-transform: uppercase; */
+    /* text-transform: lowercase; */
+    text-transform: capitalize;
+    /* line-height: 30px; */
+
+
+    /* text-indent: 100px; */
+    /* letter-spacing: 5px; */
+    /* word-spacing:15px; */
+
+
+    /* white-space: pre;
+    white-space: nowrap; */
+
+}
+
+
+/* img{ */
+    /* border: 1px solid red; */
+    /* vertical-align: top; */
+    /* vertical-align:middle; */
+/* } */
+
+
+#shadow{
+    font-size: 70px;
+    /*           horizontal verticle bluer color */
+    text-shadow: 10px 5px 6px red;
+}
+
+#pp{
+    font-size: 20px;
+    width: 500px;
+    border: 1px solid black;
+    /* writing-mode: vertical-lr; */
+    writing-mode: vertical-rl;
+}

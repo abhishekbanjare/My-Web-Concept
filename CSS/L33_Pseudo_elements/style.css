@@ -1,0 +1,34 @@
+/* pseudo elements syntex
+selector::pseudo-element{
+
+} */
+
+/* ................................................................ */
+/* p::first-letter{
+    font-size:35px;
+    color:red;
+} */
+
+/* ................................................................ */
+p::first-line{
+    font-size:35px;
+    color:red;
+}
+
+/* ................................................................. */
+h1::before{
+    content: url('arrow.png');
+}
+/* h1::after{
+    content: url('arrow.png');
+} */
+
+/* add new text from css */
+h1::after{
+    content: " Hello here add new Text";
+}
+
+::selection{
+    color:red;
+    background-color:yellow;
+}

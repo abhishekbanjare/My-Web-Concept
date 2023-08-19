@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // // print 10 to 1...............................................................
+    // function functionCount(num){
+    //     if(num === 0)
+    //     return;
+
+    //     console.log(num);
+    //     functionCount(num-1);
+    // }
+    // functionCount(10);
+    
+
+    // // Factorial program using Js Recursion..........................................
+    // function factorial(num){
+    //     if(num === 0)
+    //     return 1;
+
+    //     return num*factorial(num-1);
+    // }
+    // let result = factorial(5);
+    // console.log(`Result is: ${result}`);
+
+
+    // //Add even number 10 to 1 using Recursion........................................
+    // // 2 + 4 + 6 + 8 + 10 = 30
+    // let sum;
+    // function addEven(num){
+    //     if(num === 2)
+    //     return 2;
+
+    //     if(num % 2 == 0){
+    //         return num + addEven(num-2);
+    //     }else{
+    //         addEven(num-1);
+    //     }
+    // }
+    // let ans = addEven(10);
+    // console.log(`Total addition of Even No: ${ans}`);
+
+
+
+    // // Add total value no to 1........................................................
+    // function addTotal(num, total=0){
+    //     if(num ===0)
+    //     return total;
+
+    //     return addTotal(num-1, total += num);
+    // }
+    // console.log(addTotal(10));     //total add
+
+
+    // ................................................................................
+    const teamStructure = {
+        name: 'kunal',
+        teams: [
+            {
+                name: 'Harish',
+                teams: [
+                    {
+                        name: 'Alisha',
+                        teams: [
+                            {
+                                name: 'Yash',
+                                teams: []
+                            }
+                        ],
+                    }
+                ],
+            },
+            {
+                name: 'Anurag',
+                teams: [],
+            }
+        ],
+    }
+
+    function getTeamDetail(t){
+        console.log('Team............',t);
+        if(t.teams.length === 0)
+        return;
+
+        t.teams.forEach(team => {
+            console.log(team.name);
+            getTeamDetail(team);
+        })
+    }
+    getTeamDetail(teamStructure);
+    
+    </script>
+</body>
+</html>

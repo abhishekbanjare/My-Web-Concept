@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype by CodeStepByStep</title>
+</head>
+<body>
+    <Script>
+       
+        // let student = {
+        //     name: 'Anil',
+        //     lastName: 'sonwani',
+        //     birth: 2000,
+        //     getFullName: function(){
+        //         return this.name+" "+this.lastName;
+        //     }
+        // }
+        // console.log(student.getFullName);
+
+        // let teacher = {
+        //     name: 'Harry',
+        //     lastName: 'Sharma',
+        //     birth: 1980,
+        //     getFullName: function(){
+        //         return this.name+" "+this.lastName
+        //     }
+        // }
+
+        // console.log(student.getFullName());
+        // console.log(teacher.getFullName());
+
+// (1)...........................................................................................................
+        //  let users = {
+        //     getFullName: function(){
+        //         return this.name+" "+this.lastName
+        //     },
+        //     getAge: function(){
+        //         let age = new Date().getFullYear()-this.birth;
+        //         return age
+        //     }
+        // }
+
+        //   let student = {
+        //     name: 'Anil',
+        //     lastName: 'sonwani',
+        //     birth: 2000,
+        // }
+
+        // let teacher = {
+        //     name: 'Harry',
+        //     lastName: 'Sharma',
+        //     birth: 1980
+        // }
+
+        // student.__proto__ = users;  //normal load karne pe method tabhi laod hota hai jab uski jarurat hoti hai
+        // teacher.__proto__ = users;
+
+
+        // console.log(student.getAge());
+        // console.log(teacher.getAge());
+
+        //(2).....................................................................................................
+
+
+        //   let users = {
+        //     getFullName: function(){
+        //         return this.name+" "+this.lastName
+        //     },
+        //     getAge: function(){
+        //         let age = new Date().getFullYear()-this.birth;
+        //         return age
+        //     }
+        // }
+
+        //   let student = {
+        //     name: 'Anil',
+        //     lastName: 'sonwani',
+        //     birth: 2000,
+        //     getAge: users.getAge     //directely property load karne pe sara ka sara property (method) load ho jati hai
+        // }
+
+        // let teacher = {
+        //     name: 'Harry',
+        //     lastName: 'Sharma',
+        //     birth: 1980,
+        //     getAge: users.getAge    //inherit
+        // }
+
+        // console.log(student.getAge());
+        // console.log(teacher.getAge());
+
+        //(3).....................................................................................................
+
+
+          Object.prototype.myAppData = "this is a sample project";
+          Object.prototype.myDataFu = function(){
+             return "This is a custom function";
+          }
+
+          String.prototype.otherData = "This is a prototype for String....";
+
+          let users = {
+            getFullName: function(){
+                return this.name+" "+this.lastName
+            },
+            getAge: function(){
+                let age = new Date().getFullYear()-this.birth;
+                return age
+            }
+        }
+
+          let student = {
+            name: 'Anil',
+            lastName: 'sonwani',
+            birth: 2000,
+            getAge: users.getAge     //directely property load karne pe sara ka sara property (method) load ho jati hai
+        }
+
+        let teacher = {
+            name: 'Harry',
+            lastName: 'Sharma',
+            birth: 1980,
+            getAge: users.getAge    //inherit
+        }
+
+        // console.log(student.getAge());
+        // console.log(teacher.getAge());
+
+        console.log(student.myAppData);
+        let x;
+        x = myAppData;
+        console.log("x = "+x);
+
+        console.log(student.myDataFu);
+
+        console.log("Hello".otherData);
+        console.log(student.name.otherData);
+        console.log(student.name.length);
+       
+    </Script>
+</body>
+</html>

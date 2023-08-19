@@ -1,0 +1,28 @@
+/* make variable......................... */
+:root{
+    --primary-color: yellow;
+    --btn-color: red;
+    --text-color: blue;
+}
+
+
+#fun{
+    height:200px;
+    background-color: var(--primary-color)
+    /* background-color:yellow;   */
+    
+    /* width:70%; */
+    /* width: calc(100% - 200px); */
+}
+a{
+    padding: 10px 30px;
+    margin:20px;
+
+    /* background-color:red;  */
+    background-color: var(--btn-color);
+
+    /* color: blue;   */
+    color: var(text-color);
+
+    text-decoration: none;
+}

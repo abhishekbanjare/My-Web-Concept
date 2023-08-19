@@ -1,0 +1,22 @@
+img{
+    height:150px;
+}
+p{
+    border:1px solid blue;
+
+    overflow:auto;
+
+}
+
+img{
+    /* float:right; */
+}
+
+#img1{
+     float:right;
+     /* clear:right; */
+}
+#img2{
+     float:right;
+     clear:right;
+}

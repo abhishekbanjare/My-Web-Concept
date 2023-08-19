@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index3</title>
+</head>
+<body>
+    <div id="intro">
+        <p>Hello this is a p tag</p>
+    </div>
+
+    <!-- create and add new element in body , throught properties -->
+    <script>
+       let elm = document.getElementById("intro");
+       let newtag = document.createElement('h1');
+       newtag.className = "try pi";
+       newtag.id = "id1";
+
+       //how to add value in new create tag
+       newtag.textContent = "This is a new heading tag";   //through -> properties
+    //    let text = document.createTextNode("This is a new heading tag");  //throught method
+
+       elm.appendChild(newtag);
+    </script>
+    
+</body>
+</html>

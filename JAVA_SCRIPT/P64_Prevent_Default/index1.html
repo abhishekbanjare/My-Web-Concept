@@ -1,0 +1,20 @@
+<!-- if we want to not open link after clicking so we can use preventDefault -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index 1</title>
+</head>
+<body>
+      <a href="https://www.google.com/" id="anchor">Click Me</a>
+      
+      <script>
+        let link = document.getElementById("anchor");
+        link.addEventListener('click', function(e){
+              console.log("link clicked...");
+              e.preventDefault();
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+    background-color:#2aa5a5;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+#container{
+    /* color:#1e2020; */
+    color:#0a0303;
+}
+.digit{
+    font-size: 150px;
+    font-weight: bold;
+}
+.txt{
+    font-size: 40px;
+    font-weight: bold;
+}
+#btn-container{
+    text-align:center;
+    margin-top: 40px;
+}
+.btn{
+    padding: 7px 25px;
+    font-size: 18px;
+    margin: 0px 10px;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+}
+#start{
+     background-color:rgb(7, 133, 59);
+}
+#stop{
+     background-color:darkblue
+}
+#reset{
+    background-color: red;
+}

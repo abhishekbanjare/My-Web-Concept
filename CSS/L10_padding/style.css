@@ -1,0 +1,18 @@
+#div1{
+      border: 2px solid red;
+      /* padding-top:50px;
+      padding-bottom:50px;
+      padding-left:30%;
+      padding-right:10%; */
+
+
+
+      /* left - right - top -  bottom*/
+      /* padding: 25px;    */
+
+      /* 25-> top-bottom    50->left-right */
+      padding: 10% 20%; 
+}
+
+
+

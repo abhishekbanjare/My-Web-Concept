@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+<body>
+    <script>
+        // let a = {
+        //     name: "Harry",
+        //     language: "JavaScript"
+        // }
+        // console.log(a);
+
+        // let p = {
+        //     run: () => {
+        //         alert("Hello Abhishek....");
+        //     }
+        // }
+        // // a.run()  //here generat error
+
+        // a.__proto__ = p;
+        // a.run()
+        //.......................................................................................................
+
+
+
+         let a = {
+            name: "Harry",
+            language: "JavaScript",
+
+             run: () => {
+                alert("Hello Prashant....");
+            }
+        }
+        console.log(a);
+
+        let p = {
+            run: () => {
+                alert("Hello Abhishek....");
+            }
+        }
+        // a.run()  //here generat error
+
+        p.__proto__ = {     // prototype of protorype
+            name1: "vishwajeet"
+        }
+
+        a.__proto__ = p;    // p is prototype of a
+        a.run()
+
+        console.log(a.name1)
+
+    </script>
+</body>
+</html>

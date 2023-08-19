@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index 4</title>
+</head>
+<body>
+    <h2 id="test"> Test String </h2>
+
+    <button onclick="redFn()">Red The Text</button> <br>  
+
+    <button id="testbutton">Event Listener Testing</button><br>
+
+    <script>
+        function redFn() {
+	      document.getElementById('test').style.color = 'red';
+          console.log('test fn')
+        }
+
+        function redFn1() {
+	      console.log('test red fn 1')
+        }
+
+        document.getElementById('testbutton').addEventListener('click', redFn );
+        document.getElementById('testbutton').addEventListener('click', redFn1 );
+    </script>
+</body>
+</html>

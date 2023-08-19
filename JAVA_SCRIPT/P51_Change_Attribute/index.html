@@ -1,0 +1,40 @@
+<!-- set , get , remove, attribute -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Attribute</title>
+</head>
+<body>
+    <!-- <button id="btn">Send</button>
+
+    <script>
+        let btn = document.getElementById("btn");
+        btn.setAttribute("class","form1");  //add new class attribute 
+    </script> -->
+<!-- ................................................................................................ -->
+
+        <!-- if we want to know that, what is value of name attribute -->
+        <!-- <button id="btn" name="form1">Send</button>
+        <script>
+                 let btn = document.getElementById("btn");
+                 let val = btn.getAttribute("name");
+                 console.log(val);
+        </script> -->
+<!-- ................................................................................................. -->
+<!-- if we wabt to remove  name attribute so then -->
+<!-- and if we want to know thant any variable/averything is attribute or not -->
+            <button id="btn" name="form1">Send</button>
+                <script>
+                    let btn = document.getElementById("btn");
+                    // let val = btn.removeAttribute("name");
+                
+                    // let val = btn.hasAttribute("name");  //check name is attribute or not
+                    let val = btn.hasAttribute("class");  //check class is attribute or not
+                    console.log(val);
+                    
+                </script>
+</body>
+</html>

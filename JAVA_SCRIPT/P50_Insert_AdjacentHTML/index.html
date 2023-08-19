@@ -1,0 +1,41 @@
+<!-- powerfull function 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert AdjacentHTML</title>
+</head>
+<body>
+    <!-- ther are four position -->
+
+    <!-- beforebegin -->
+    <div id="intro">     <!-- selected -->
+        <!-- afterbegin -->
+        <h2>Heading</h2>
+        <p>This is a p tag</p>
+        <!-- beforeend -->
+    </div>
+    <!-- afterend -->
+
+    <script>
+        let main = document.getElementById("intro");
+        // i want to add new elements in difrent position
+        let newElm = "<h1>Abhishek</h1>";   //new elements
+
+        // main.insertAdjacentHTML('beforebegin', newElm); 
+        // main.insertAdjacentHTML('afterbegin', newElm);
+        // main.insertAdjacentHTML('beforeend', newElm);
+        main.insertAdjacentHTML('afterend', newElm);
+
+
+
+    </script>
+   
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- if we want to add new element out of <ul></ul> then see -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- need to add here new heading tag element -->
+    <ul id="ull">
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+    </ul>
+
+    <script>
+        let parent = document.body;  //parent
+        let nitem = document.createElement("h2");
+        nitem.textContent = "This is new heading";
+        let pos = document.getElementById("ull");
+        parent.insertBefore(nitem, pos);
+    </script>
+</body>
+</html>

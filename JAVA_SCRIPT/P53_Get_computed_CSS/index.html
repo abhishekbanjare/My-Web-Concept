@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #btn{
+            background-color: red;
+            color: white;
+          }
+    </style>
+</head>
+<body>
+    <!-- <button id="btn" name="form1" style="color:blue">Send</button> -->
+
+    <button id="btn" name="form1">Send</button>
+    <!-- <script>
+        let btn = document.getElementById("btn");
+        btn.style.cssText += "background:red; border: 1px solid green;";
+    </script> -->
+
+    <script>
+        let btn = document.getElementById("btn");
+        let css = getComputedStyle(btn); //we fined all style of this element
+        console.log(css);
+        console.log(css.color);
+    </script>
+</body>
+</html>

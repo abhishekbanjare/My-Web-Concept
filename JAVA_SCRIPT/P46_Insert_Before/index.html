@@ -1,0 +1,62 @@
+<!-- here we see 'insert befor function' , add new element any position-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Before</title>
+</head>
+<body>
+<!-- ..................................................................................................... -->
+    <!-- 
+        we want to make this type
+        Pragraph 1
+        List 1
+        Pragraph 2
+        List 2
+        Pragraph 3
+        List 3
+        Pragraph 4
+        List 4
+     -->
+<!-- ......................................................................................................... -->
+
+        <ul id="ull">
+            <!-- add this position List new -->
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+        </ul>
+
+    <script>
+        let elm = document.getElementById("ull"); //parent
+
+        let nitem1 = document.createElement('li');
+        nitem1.textContent = "Paragraph 1";
+        let posl1 = elm.firstElementChild;
+        elm.insertBefore(nitem1, posl1);
+
+        let nitem2 = document.createElement('li');
+        nitem2.textContent = "Paragraph 2";
+        let posl2 = posl1.nextElementSibling;
+        elm.insertBefore(nitem2, posl2);
+
+        let nitem3 = document.createElement('li');
+        nitem3.textContent = "Paragraph 3";
+        let posl3 = posl2.nextElementSibling;
+        elm.insertBefore(nitem3, posl3);
+
+        let nitem4 = document.createElement('li');
+        nitem4.textContent = "Paragraph 4";
+        let posl4 = posl3.nextElementSibling;
+        elm.insertBefore(nitem4, posl4);
+
+        
+
+
+
+    </script>
+</body>
+</html>

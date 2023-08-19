@@ -1,0 +1,19 @@
+/* imge filter properties */
+img{
+    height:200px;
+    /* filter: blur(4px); */
+    /* filter:brightness(80%); */
+    /* /* filter:contrast(60%); */
+    filter:drop-shadow(8px 8px 4px red); */
+
+    /* if we want black and white then */
+    /* filter: grayscale(200%); */
+
+    /* if we want color change then */
+    /* filter: hue-rotate(40deg); */
+    /* filter:invert(20%) */
+    /* filter:opacity(30%); */
+    /* filter:saturate(30%); */
+    /* filter:sepia(); */
+    /* filter: brightness(80%), contrast(100%); */
+}

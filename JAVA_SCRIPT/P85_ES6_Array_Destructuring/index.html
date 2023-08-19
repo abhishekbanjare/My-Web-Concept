@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Destructuring</title>
+</head>
+<body>
+    <script>
+        //create and access normal array...............................................
+        // let book = ["Advance JS",200, 150];
+        // let name = book[0];
+        // let pages = book[1];
+        // let price = book[2];
+        // console.log(name);
+        // console.log(pages);
+        // console.log(price);
+
+        //create and access for advance method array (ES6)...................................
+
+        // let book = ["advande JS" , , 200, 150];
+        // let[name, publication="geeksforgeeks", pages, price] = book; //here publication is assign default value, when not assign any value so assign automatic default value
+        // console.log(name);
+        // console.log(publication);
+        // console.log(pages);
+        // console.log(price);
+
+        //nested array..................................................................
+
+        // let book = ["advanced Js",200,500, ["w3school", 2023]];
+        // let[name, pages, price, [publication, year]] = book;
+        // console.log(name);
+        // console.log(pages);
+        // console.log(price);
+        // console.log(publication);
+        // console.log(year);
+
+        //use array ....................................................................
+         function book(){
+            //do somthing
+            return ["Advanced JS",200,500];
+         }
+
+         let name = book();
+         console.log(name);
+
+
+         //Destructuring Array..
+        //  let [book_title, pages, price] = book();
+        //  console.log(book_title);
+        //  console.log(pages);
+        //  console.log(price);
+        //  console.log(book);
+
+    </script>
+</body>
+</html>

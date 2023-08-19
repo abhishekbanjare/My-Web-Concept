@@ -1,0 +1,20 @@
+.border{
+    border-style:solid;
+    /* border-style:dashed; */
+    /* border-style:dotted; */
+    /* border-style:outset; */
+    /* border-style:inset; */
+
+    /* border-style:solid dashed none dotted; */
+    border-width:8px;
+    /* border-color:red; */
+    
+
+    /* border-top-style:solid;
+    border-top-width:15px;
+    border-top-color:aqua; */
+
+    /* border-radius:20px; */
+    /* border-radius:10px 20px 40px 50px; */
+    border-bottom-right-radius:30px;
+}

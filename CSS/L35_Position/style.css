@@ -1,0 +1,52 @@
+body{
+    height:1000px;
+}
+#parent{
+    border:1px solid red;
+    padding:20px;
+    width: 50%;
+    display:inline-block;
+    margin:100px;
+
+    /* -relative apne jagah se calculation start karta hai
+       -relative apna space nahi chhodta hai
+    */
+    position: relative;
+}
+#one{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display:inline-block;
+}
+#two{
+    width: 100px;
+    height: 100px;
+    background-color:blue;
+    display:inline-block;
+
+    /* position:relative;
+    top:50px;
+    left:50px; */
+
+/* ......................................................... */
+
+    /* -absolute apne nearest positioned parent se calculation start karta hai 
+       -absolute apna space chhod deta thai
+    */
+    /* position:absolute;
+    top:0px;
+    left:0px; */
+
+/* ..................................................... */
+
+    /* position:fixed;
+    bottom: 10px;
+    right: 10px; */
+}
+#three{
+    width: 100px;
+    height: 100px;
+    background-color:black;
+    display:inline-block;
+}

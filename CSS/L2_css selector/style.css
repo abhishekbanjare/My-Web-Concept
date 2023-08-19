@@ -1,0 +1,21 @@
+/* Element selector */
+/* h1{
+   background-color:black;
+   color:red;
+}
+p{
+    background-color:red;
+    color:black;
+} */
+
+/* Id selector */
+#my-id{
+    background-color:black;
+    color:white;
+}
+
+/* class selector */
+.my-class{
+    background-color:aqua;
+    color:red;
+}

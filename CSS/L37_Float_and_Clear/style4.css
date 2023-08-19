@@ -1,0 +1,20 @@
+#content{
+     width:70%;
+     background-color:yellow;
+     height: 200px;
+     float:left;
+}
+#sidebar{
+      width: 30%;
+      background-color:brown;
+      /* height: 200px; */
+      height:150px;
+      float:left;
+}
+
+#footer{
+    color:white;
+    background-color:black;
+    
+    clear:both;
+}

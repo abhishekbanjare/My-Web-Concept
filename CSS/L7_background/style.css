@@ -1,0 +1,32 @@
+/* body{
+    background-color:aqua;
+} */
+
+/* .bg{ */
+    /* background-color:red; */
+    /* background-image: url('images/img1.jpg'); */
+
+    /* background-repeat:no-repeat; */
+
+    /* background-position:right bottom; */
+    /* background-position: right top; */
+    /* background-position:left center; */
+    /* background-position:center center; */
+
+    /* background-size:cover; */
+    /* background-size:500px 800px; */
+    /* background-size:70% 50%; */
+
+    /* background-attachment:fixed; */
+    /* background-attachment:scroll; */
+/* }  */
+ 
+
+/* we can set multiple image in background */
+.bg{
+    background-image:url('images/img1.jpg'), url('images/img2.jpg');
+    background-size: 500px 200px;
+    background-repeat:no-repeat;
+    /* background-position:left top, right bottom; */
+    background-position:center, left bottom;
+}

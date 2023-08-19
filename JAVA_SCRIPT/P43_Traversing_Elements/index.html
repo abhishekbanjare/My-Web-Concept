@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing elements</title>
+</head>
+<body>
+    <!-- we want to travers child to parent -->
+    <!-- <h2>Heading 1</h2>
+    <ul>
+        <li id="intro">List 1</li>    
+        <li>List 2</li>
+        <li>List 3</li>
+    </ul>
+    <ul>
+        <li>List A</li>
+        <li>List B</li>
+        <li>List C</li>
+    </ul>
+
+    <script>
+        let elm = document.getElementById("intro");
+        // console.log(elm);
+        let parent = elm.parentElement;
+        parent.innerHTML = "Abhishek";
+        console.log(parent);
+    </script> -->
+
+<!-- ........................................................................................ -->
+
+<!-- we want to traverse parent to chiled -->
+<!-- <h2>Heading 1</h2>
+    <ul id="intro">
+        <li >List 1</li>    
+        <li>List 2</li>
+        <li>List 3</li>
+    </ul>
+    <ul>
+        <li>List A</li>
+        <li>List B</li>
+        <li>List C</li>
+    </ul>
+
+    <script>
+        let elm = document.getElementById("intro");
+        // console.log(elm);
+        
+        // let first = elm.firstElementChild;
+        // console.log(first);
+        // first.innerHTML = "Hello..!!";
+
+
+        // let last = elm.lastElementChild;
+        // console.log(last);
+        // last.innerHTML = "thisIsLastElement";
+
+
+        // let all = elm.children;
+        // console.log(all);
+
+        // for(let i=0;i<all.length-1;i++){
+        //     all[i].innerHTML = "JavaScript";
+        // }
+
+    </script> -->
+<!-- ........................................................................................ -->
+
+<!-- we want to select siblings -->
+<h2>Heading 1</h2>
+    <ul >
+        <li>List 1</li>    
+        <li id="intro">List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+    </ul>
+    <ul>
+        <li>List A</li>
+        <li>List B</li>
+        <li>List C</li>
+        <li>List D</li>
+    </ul>
+
+    <script>
+       let elm = document.getElementById("intro");
+       let node1 = elm.previousElementSibling;
+       console.log(node1);
+
+       let node2 = elm.nextElementSibling;
+       console.log(node2);
+    </script>
+
+</body>
+</html>
